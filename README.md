@@ -9,3 +9,4 @@ This utility detects the faces in a video feed and matches with the provided fac
 4. Run using ```python facerec.py```
 5. Press "q" on the video to quit
 
+PS: python version used while development: 3.10
