@@ -2,12 +2,14 @@ import cv2
 import numpy as np
 from deepface import DeepFace
 import warnings
+import os
 
 # Disable all warnings
 warnings.filterwarnings("ignore")
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
 # Load the cascade
-face_cascade = cv2.CascadeClassifier('/Users/shandilya/Desktop/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier(os.path.join(current_dir, 'haarcascade_frontalface_default.xml'))
 
 # Initialize the camera
 cap = cv2.VideoCapture(0)
